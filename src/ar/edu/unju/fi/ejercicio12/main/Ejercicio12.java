@@ -33,8 +33,8 @@ public class Ejercicio12 {
 		persona = new Persona(nombre, fecha_nacimiento);
 	
 		System.out.println("\n");
-		System.out.println("Nombre: "+nombre);
-		System.out.println(str_nacimiento);
+		System.out.println("Nombre: "+persona.getNombre());
+		System.out.println("Fecha de nacimiento: "+persona.fecha_nacimiento());
 		System.out.println("Edad: "+persona.edad());
 		System.out.println("Zodiaco: "+persona.zodiaco());
 		System.out.println("Nacio en: "+persona.estacion());

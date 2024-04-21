@@ -3,8 +3,8 @@ package ar.edu.unju.fi.ejercicio12.model;
 import java.util.Calendar;
 
 public class Persona {
-	public String nombre;
-	public Calendar fecha_nacimiento;
+	private String nombre;
+	private Calendar fecha_nacimiento;
 	
 	public Persona(String nombre, Calendar fecha_nacimiento) {
 		this.nombre = nombre;
@@ -14,6 +14,25 @@ public class Persona {
 		
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Calendar getFecha_nacimiento() {
+		return fecha_nacimiento;
+	}
+
+	public void setFecha_nacimiento(Calendar fecha_nacimiento) {
+		this.fecha_nacimiento = fecha_nacimiento;
+	}
+	
+	public String fecha_nacimiento() {
+		return fecha_nacimiento.get(Calendar.DATE)+"/"+fecha_nacimiento.get(Calendar.MONTH)+"/"+fecha_nacimiento.get(Calendar.YEAR);
+	}
 
 	public int edad() {
 		
